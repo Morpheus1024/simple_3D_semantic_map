@@ -188,13 +188,13 @@ def create_semantic_3D_map(segmented_color_image, depth_image, fx: float, fy: fl
     """Function that process image with its depth into 3D semantic map
 
     Args:
-        segmented_color_image (_type_): _description_
-        depth_image (_type_): _description_
-        fx (float): _description_
-        fy (float): _description_
-        z_scale (float, optional): _description_. Defaults to 0.001.
-        print_logs (bool, optional): _description_. Defaults to False.
-        save_ply (bool, optional): _description_. Defaults to False.
+        segmented_color_image (image): input, segmented image
+        depth_image (image): depth image of the segmented image
+        fx (float): focal length in x axis
+        fy (float): focal length in y axis
+        z_scale (float, optional): Defaults to 0.001.
+        print_logs (bool, optional): Flag that will show logs. Defaults to False.
+        save_ply (bool, optional): Option to sav esemantic map into .ply file. Defaults to False.
 
     Raises:
         ValueError: _description_
@@ -233,8 +233,8 @@ def create_semantic_3D_map(segmented_color_image, depth_image, fx: float, fy: fl
             z = depth_image[v, u] * z_scale
             if z <=0: continue 
                  
-            x = u /fx
-            y = -v /fy
+            x = (u - cx) * z / fx
+            y = -(v - cy) * z / fy
 
             points.append([x, y, z])
             color = segmented_color_image[v, u, :3] / 255.0  
