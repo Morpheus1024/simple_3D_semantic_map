@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name = 'simple_3d_semantic_map',
-    version = '0.1.8',
+    version = '0.1.9',
     packages = find_packages(),
     install_requires = [
     'pyrealsense2==2.54.2',

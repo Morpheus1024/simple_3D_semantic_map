@@ -5,6 +5,7 @@ from .simple_3D_semantic_map import get_realsense_camera_config
 from .simple_3D_semantic_map import create_semantic_3D_map
 from .simple_3D_semantic_map import view_cloude_point_from_ply
 from .simple_3D_semantic_map import view_cloude_point
+from .simple_3D_semantic_map import photo_from_webcam
 from .simple_3D_semantic_map import knn
 from .simple_3D_semantic_map import threshold
 from .simple_3D_semantic_map import local_threshold
