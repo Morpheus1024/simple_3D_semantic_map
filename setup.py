@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name = 'simple_3D_semantic_map',
-    version = '0.1.1',
+    version = '0.1.2',
     packages = find_packages(),
     install_requires = [
     'pyrealsense2==2.54.2.5684',
@@ -18,4 +18,12 @@ setup(
     ],
     long_description=description,
     long_description_content_type='text/markdown',
+    license='MIT',
+    url = 'https://github.com/Morpheus1024/simple_3D_semantic_map',
+    classifiers = [
+        "Programming Language :: Python :: 3.9",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent"
+    ],
+    python_requires='3.9',
 )
