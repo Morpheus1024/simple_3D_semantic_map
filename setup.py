@@ -20,10 +20,10 @@ setup(
     long_description_content_type='text/markdown',
     license='MIT',
     url = 'https://github.com/Morpheus1024/simple_3D_semantic_map',
+    python_requires="==3.9",
     classifiers = [
         "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
     ],
-    python_requires='=3.9',
 )

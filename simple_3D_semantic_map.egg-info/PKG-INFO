@@ -1,6 +1,12 @@
 Metadata-Version: 2.1
 Name: simple-3D-semantic-map
-Version: 0.1.1
+Version: 0.1.2
+Home-page: https://github.com/Morpheus1024/simple_3D_semantic_map
+License: MIT
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.9
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: pyrealsense2==2.54.2.5684
