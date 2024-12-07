@@ -1,8 +1,11 @@
 from setuptools import setup, find_packages
 
+with open('README.md', 'r') as f:
+    description = f.read()
+
 setup(
     name = 'simple_3D_semantic_map',
-    version = '0.1',
+    version = '0.1.1',
     packages = find_packages(),
     install_requires = [
     'pyrealsense2==2.54.2.5684',
@@ -13,4 +16,6 @@ setup(
     'opencv-python==4.9.0.80',
     'transformers==4.46.1',
     ],
+    long_description=description,
+    long_description_content_type='text/markdown',
 )
