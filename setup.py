@@ -5,10 +5,10 @@ with open('README.md', 'r') as f:
 
 setup(
     name = 'simple_3D_semantic_map',
-    version = '0.1.2',
+    version = '0.1.7',
     packages = find_packages(),
     install_requires = [
-    'pyrealsense2==2.54.2.5684',
+    'pyrealsense2==2.54.2',
     'numpy==1.26.4',
     'matplotlib==3.8.3',
     'torch==2.3.0',

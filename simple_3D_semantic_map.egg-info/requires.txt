@@ -1,4 +1,4 @@
-pyrealsense2==2.54.2.5684
+pyrealsense2==2.54.2
 numpy==1.26.4
 matplotlib==3.8.3
 torch==2.3.0
