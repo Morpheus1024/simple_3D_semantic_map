@@ -449,7 +449,7 @@ def watershed(image) -> np.array:
 
 #MARK: Depth estimation Models
 
-def use_MiDaS(image, model = "MiDaS_small") -> np.array:
+def use_MiDaS(image, model = "small") -> np.array:
     """Use MiDaS model form PyTorch hub to estimate depth of the given image.
 
     Args:
